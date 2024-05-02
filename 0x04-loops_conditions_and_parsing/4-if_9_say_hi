@@ -7,9 +7,9 @@ counter=1
 while [ $counter -le 10 ]
 do
 	echo "$string"
-	((counter++))
-	if [ $counter == 9 ]
+	if [ $counter -eq 9 ]
 	then
 		echo "Hi"
 	fi
+	((counter++))
 done
