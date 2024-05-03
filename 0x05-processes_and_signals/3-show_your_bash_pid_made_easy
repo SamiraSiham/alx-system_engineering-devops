@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Find processes containing "bash" in their names
-pgrep -a bash | while read -r pid pname; do
-    echo "$pid $pname"
-done
+pgrep -l bash
 
