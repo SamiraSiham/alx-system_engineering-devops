@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# writ to infinity and beyond infinitely with a 2 second delay
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
+
