@@ -1,14 +1,3 @@
 #!/usr/bin/env bash
-
-# Backup the original hosts file
-sudo cp /etc/hosts /etc/hosts.backup
-
-# Edit the hosts file to configure localhost and facebook.com
-sudo sed -i '/localhost/d' /etc/hosts  # Remove any existing localhost entry
-sudo sed -i '/facebook.com/d' /etc/hosts  # Remove any existing facebook.com entry
-
-echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts  # Add localhost entry
-echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts  # Add facebook.com entry
-
-# Restart networking to apply changes
-sudo systemctl restart networking.service
+cp /etc/hosts ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
