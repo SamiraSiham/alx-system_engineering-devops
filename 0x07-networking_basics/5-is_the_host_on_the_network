@@ -7,7 +7,7 @@
 if [ $# -eq 0 ]; then
     echo "Usage: $0 {IP_ADDRESS}"
     exit
-elif [ $# -t 1 ]; then
+elif [ $# -gt 1 ]; then
 	echo "Usage: $0 {IP_ADDRESS}"
 	exit
 else
