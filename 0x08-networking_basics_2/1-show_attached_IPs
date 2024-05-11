@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Get all active IPv4 IPs
-ipconfig -a | grep "inet addr" | cut -d " " -f12 | cut -d ":" -f2
+ifconfig -a | grep "inet addr" | cut -d " " -f12 | cut -d ":" -f2
