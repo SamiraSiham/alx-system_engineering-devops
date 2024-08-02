@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 #Listen on port 98 and echo received text
-while true; do
-    # Use netcat to listen on port 98
-        nc -l 127.0.0.1 -p 98
-done
+
+nc 127.0.0.1 98
